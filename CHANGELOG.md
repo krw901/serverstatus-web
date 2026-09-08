@@ -1,3 +1,22 @@
+# [4.0.0](https://github.com/krwu/ServerStatus-web/compare/v3.0.0...v4.0.0) (2026-09-08)
+
+
+* feat!: replace CRA with Vite, React 19, and Ant Design 6 ([8edfe25](https://github.com/krwu/ServerStatus-web/commit/8edfe25e72379565fe23d73c7b7a101c4e76f469))
+
+
+### Bug Fixes
+
+* adapt Progress markup and styles for antd 6 ([ef1d957](https://github.com/krwu/ServerStatus-web/commit/ef1d957810156cbdab68f6aef88bd5d77c832742))
+
+
+### BREAKING CHANGES
+
+* Node.js 22+ is required. Production output is now `dist/`
+instead of `build/`. Relative static deploy (`base: './'`) and the
+`sergate.zip` semantic-release flow are preserved.
+
+Co-authored-by: krw901 <krw901@users.noreply.github.com>
+
 # [3.0.0](https://github.com/krwu/ServerStatus-web/compare/v2.0.3...v3.0.0) (2024-06-18)
 
 
