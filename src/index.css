@@ -1,36 +1,61 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
-    'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding-bottom: 69px;
 }
+
 .logo {
   color: #fff;
   font-size: 20px;
 }
 
+.App .ant-layout-header {
+  background: #001529;
+  padding-inline: 50px;
+  height: 64px;
+  line-height: 64px;
+}
+
+.app-content {
+  background: #fff;
+}
+
 .sergate {
   margin: 16px 0;
 }
+
 .sergate .ant-row {
   position: relative;
   flex-wrap: nowrap;
 }
-.sergate .sg-progress .ant-progress-outer {
-  margin-right: calc(-3em - 8px);
-  padding-right: calc(3em + 8px);
+
+.sergate .sg-progress {
+  width: 100%;
 }
+
+.sergate .sg-progress .ant-progress-body {
+  width: 100%;
+}
+
 .sr-head {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
 .sr-head .ant-col {
   text-align: center;
 }
+
 .sr-body .ant-col {
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
   border-top: 1px solid #ebebeb;
 }
+
 .col-num {
   position: absolute;
   width: 16px;
@@ -61,10 +86,6 @@ body {
   text-align: center;
 }
 
-body {
-  padding-bottom: 69px;
-}
-
 .footer a {
   color: inherit;
 }
@@ -78,23 +99,27 @@ body {
   .logo {
     text-align: center;
   }
+
   .sr-head {
     font-size: 0.8rem;
   }
+
   .sr-body .ant-col {
     font-size: 0.8rem;
   }
+
   .sergate .ant-tag {
     margin-right: 0;
   }
 }
 
 @media (max-width: 900px) {
-  .sergate .ant-col .ant-progress-outer {
+  .sergate .ant-col .ant-progress-rail {
     display: none;
   }
-  .sergate .ant-col .ant-progress-text {
-    margin-left: 0;
+
+  .sergate .ant-col .ant-progress-indicator {
+    margin-inline-start: 0;
   }
 
   .sr-head {

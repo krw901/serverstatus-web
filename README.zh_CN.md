@@ -19,6 +19,8 @@
 
 你必须首先成功安装和运行 [BotoX's ServerStatus](https://github.com/BotoX/ServerStatus/)。因为这个项目仅仅是一个可以即插即用的可替换的 web 界面。
 
+从源码编译需要 **Node.js 22+**。
+
 ### **使用预编译版：**
 
 1. 从 [release 页面](https://github.com/krwu/ServerStatus-web/releases)下载最新的预编译压缩包。
@@ -27,7 +29,7 @@
 
 ### **自己编译：**
 
-1. 你需要安装有 Node.js, npm 或者 yarn.
+1. 你需要安装有 Node.js 22+, npm 或者 yarn.
 2. 克隆本项目，或者下载打包的源代码到你的机器。
 3. 进入项目根目录（或解压后的文件夹）。
 4. 通过 npm(推荐) 或者 yarn 安装依赖项。
@@ -39,7 +41,9 @@
    npm i
    npm run build
    ```
-6. 把 `build` 目录下的所有文件上传到你的 ServerStatus 的 web 目录（推荐操作：你可以先删除**原目录**下除了 `json/status.json` 以外的所有文件）。
+6. 把 `dist` 目录下的所有文件上传到你的 ServerStatus 的 web 目录（推荐操作：你可以先删除**原目录**下除了 `json/status.json` 以外的所有文件）。
+
+生产构建使用相对路径（`./`），因此可以部署在子目录中。Release 仍然提供包含 `sergate/` 目录的 `sergate.zip`。
 
 ---
 
