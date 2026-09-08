@@ -166,7 +166,7 @@ export default function ServerRow(props: SergateData) {
               <Progress
                 className="sg-progress"
                 strokeLinecap="square"
-                strokeWidth={12}
+                size={{ height: 12 }}
                 percent={server.cpu}
                 status="active"
               />
@@ -176,7 +176,7 @@ export default function ServerRow(props: SergateData) {
                 <Progress
                   className="sg-progress"
                   strokeLinecap="square"
-                  strokeWidth={12}
+                  size={{ height: 12 }}
                   percent={usagePercent(server.memory_used, server.memory_total)}
                   status="active"
                 />
@@ -190,7 +190,7 @@ export default function ServerRow(props: SergateData) {
                 <Progress
                   className="sg-progress"
                   strokeLinecap="square"
-                  strokeWidth={12}
+                  size={{ height: 12 }}
                   percent={usagePercent(server.hdd_used, server.hdd_total)}
                   status="active"
                 />
