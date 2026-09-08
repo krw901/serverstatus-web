@@ -18,6 +18,8 @@ This is a web ui for [BotoX's ServerStatus](https://github.com/BotoX/ServerStatu
 
 You MUST install and run [BotoX's ServerStatus](https://github.com/BotoX/ServerStatus/) first. This is just a drop-in replacement for its web interface.
 
+Requires **Node.js 22+** to build from source.
+
 ### **With release version:**
 
 1. Download the latest prebuilt files on the [release page](https://github.com/krwu/ServerStatus-web/releases).
@@ -26,7 +28,7 @@ You MUST install and run [BotoX's ServerStatus](https://github.com/BotoX/ServerS
 
 ### **Built by your self:**
 
-1. You need Node.js, npm / yarn installed.
+1. You need Node.js 22+, npm / yarn installed.
 2. Clone the repo to your machine.
 3. Enter the root directory of this project.
 4. Install dependecies with npm / yarn.
@@ -40,7 +42,9 @@ You MUST install and run [BotoX's ServerStatus](https://github.com/BotoX/ServerS
    npm run build
    ```
 
-6. Copy all files in the `build` directory to your web directory of ServerStatus(you can delete all files except `json/status.json` in it, this is recommended).
+6. Copy all files in the `dist` directory to your web directory of ServerStatus(you can delete all files except `json/status.json` in it, this is recommended).
+
+The production build uses a relative base (`./`), so it can be served from a subdirectory. Releases still ship `sergate.zip` with a `sergate/` folder.
 
 ---
 
